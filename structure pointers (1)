@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<stdlib.h>
+int n;
+struct student
+{
+  char name[20];
+  int emp_no;
+  float salary;
+  int phone;
+};
+
+struct student *temp;
+int
+main ()
+{
+  temp = (struct student *) malloc (sizeof (temp));   // when allocated succesfully it will return base address of structure
+  if (temp == NULL)
+    {
+      printf ("no memory is allocated");
+
+    }
+  else
+    {
+      printf ("Enter the elements");
+      scanf ("%s %d %f %d", temp->name, &temp->emp_no, &temp->salary,
+	     &temp->phone);
+    }
+
+
+}
