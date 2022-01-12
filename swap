@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+    int a=30;
+    int b=50;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("after swap %d %d",a,b);
+}
