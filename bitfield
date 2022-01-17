@@ -1,0 +1,26 @@
+/*Output
+Size of date is 12 bytes
+Size of date is 4 bytes */
+
+
+#include <stdio.h>
+
+struct date {
+	unsigned int d; // 4bytes=32b 
+	unsigned int m; // 4bytes=32b
+	unsigned int y; // 4bytes=32b  
+};
+struct dates {
+	unsigned int d:2;
+	unsigned int m:2;
+	unsigned int y:3; //total 7 bits so it allocate 4 bytes(size of int) 89 bits saved
+};
+
+int main()
+{
+	printf("Size of date is %lu bytes\n",
+		sizeof(struct date));
+	printf("Size of date is %lu bytes\n",
+		sizeof(struct dates));	
+	
+}

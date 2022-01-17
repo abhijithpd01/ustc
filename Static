@@ -1,0 +1,33 @@
+/* Output
+without using static 6   
+without using static 6   
+with static 6    
+with static 7 */
+
+
+#include <stdio.h>
+int fun();
+int fun1();
+int main()
+{
+   
+    fun();
+    fun();
+    fun1();
+    fun1();
+    
+}
+
+int fun()
+{
+    int count=5;                   // no static declaration so for each function call it starts from beginning
+    count++;
+    printf("without using static %d \t \n",count);
+}
+
+int fun1()
+{
+   static int count=5;           // it holds the value during multiple function call
+    count++;
+    printf("with static %d\t \n",count);
+}
