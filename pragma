@@ -1,0 +1,16 @@
+#include<stdio.h>
+#pragma pack(1)
+
+struct template
+{
+    char name[18];
+    int emp_no;
+    float salary;
+};
+void display(struct template);
+ 
+int main()
+{
+  struct template emp;
+  printf("size with padding %ld",sizeof(emp));
+}

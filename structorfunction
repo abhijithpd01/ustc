@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+struct template
+{
+    char name[20];
+    int emp_no;
+    float salary;
+};
+void display(struct template);
+ 
+int main()
+{
+  struct template emp;
+  printf("Enter details");
+  scanf("%s %d %f",emp.name,&emp.emp_no,&emp.salary);
+  display(emp);
+  
+}
+
+void display(struct template emp)
+{
+    printf("employee name is %s",emp.name);
+}
