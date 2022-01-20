@@ -1,0 +1,9 @@
+#include <stdio.h>  
+int main()  
+{
+  float a=12.34567;
+  printf("value of a is with 2 decimal point is %.2f",a);
+ 
+ 
+return 0;  
+}  

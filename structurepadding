@@ -1,0 +1,13 @@
+#include<stdio.h>
+#pragma pack(1)  
+struct template
+{
+    char a;
+    char b;
+    int i;
+}tmp;
+
+int main()
+{
+   printf("%ld",sizeof(tmp));
+}

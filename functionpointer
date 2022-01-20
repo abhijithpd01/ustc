@@ -1,0 +1,23 @@
+#include <stdio.h>
+int add(int a,int b);
+
+int main()
+{
+  int (*fp)(int a,int b);
+   int sum=0;
+   int a=6,b=8;
+   printf("Address of main function is %\n p",main);
+  
+   fp=add;
+   sum=(*fp)(a,b);
+   printf("sum is %d",sum);
+   printf("Address of pointer addfunction is %p\n",add);
+   
+   printf("Address of pointer pointerfunction is %p\n",fp);
+   
+}
+
+  int add(int a,int b)
+{
+  return a+b;
+}

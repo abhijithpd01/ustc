@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    
+    int a,b;
+    int *const p=&a;
+    p=&b;                        // ptr will not point because it is constant;
+    
+    
+   
+}

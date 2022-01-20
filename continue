@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+  int a= 1;
+  while(a<6)
+  {
+      printf("hello");
+      continue;
+      printf("kitty");        // infinite hello will print ; kitty will not print control goes to beginning when continue comes;
+  }
+}

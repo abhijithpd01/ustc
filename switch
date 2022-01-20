@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+  int n;
+  printf("enter a number");
+  scanf("%d",&n);
+  switch(n)
+  {
+      case 1: printf("hello subash");
+      break;
+      case 100:  printf("hello vicky");
+      break;
+  }
+     return 10;  
+}

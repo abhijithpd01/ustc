@@ -1,0 +1,14 @@
+#include <stdio.h>  
+int main()  
+{
+ int n=2;
+ printf("Enter a number");
+ scanf("%d",&n);
+ do{
+     printf("hai");
+ }
+ while(n>2);                     // at least one execution of loop if while fails also
+ 
+ 
+return 0;  
+}  
