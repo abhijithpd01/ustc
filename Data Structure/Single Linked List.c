@@ -109,7 +109,7 @@ int delete()
     
     length=len();
     
-    if(loc>length)
+    if(loc>length||loc==0)
     {
         printf("List does not exist");
     }
