@@ -13,6 +13,11 @@ void insertend()
 {
     struct node* temp;
     temp=(struct node*)malloc(sizeof(temp));
+    if(root==NULL)
+    {
+        printf("Linked list does not exist\n\v");
+        exit(0);
+    }
     printf("Enter data");
     scanf("%d",&temp->data);
     temp->link=NULL;
